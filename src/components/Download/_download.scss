@@ -1,0 +1,16 @@
+@use '../../styles/styles';
+
+.download-container {
+  background: url("../../images/bg.png");
+  background-size: cover;
+  height: 350px;
+  color: #fff;
+}
+
+.download-text {
+  p {
+    @include styles.text-formatter(#ffffff, "Poppins", 15px, 400);
+    opacity: 0.7;
+    line-height: 25px;
+  }
+}

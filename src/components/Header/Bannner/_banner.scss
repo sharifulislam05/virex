@@ -1,0 +1,42 @@
+@use '../../../styles/styles';
+
+.banner__left {
+  h6 {
+    @include styles.text-formatter(styles.$yellow-text, "Poppins", 18px, 500);
+  }
+
+  h3 {
+    @include styles.text-formatter(styles.$header-heading-text, "Sarabun", 50px, 700);
+  }
+
+  .try-btn {
+    background: styles.$header-btn-bg;
+    color: styles.$white-text;
+    margin-right: 1rem;
+  }
+
+  .download-btn {
+    border: 1px solid styles.$header-btn-bg;
+    @include styles.text-formatter(styles.$header-btn-bg, "Poppins", 15px, 400);
+  }
+}
+
+.header__right {
+  margin-top: 3rem;
+  img {
+    box-shadow: 0 0px 60px gray;
+    border-radius: 40px;
+  }
+
+  .phn-small {
+    width: 230px;
+    height: 450px;
+    margin-right: 4.5rem;
+    margin-left: 3.5rem;
+  }
+
+  .phn-big {
+    height: 480px;
+    width: 250px;
+  }
+}

@@ -1,0 +1,34 @@
+// all color
+$header-btn-bg: #567df4;
+$white-text: #ffff;
+$yellow-text: #ffc700;
+$header-heading-text: #242424;
+
+// custom class
+.brand-text {
+  color: #567df4 !important;
+}
+// brand custom button
+.brand__btn {
+  width: 130px;
+  height: 40px;
+  box-shadow: 0 20px 38px rgba(48, 29, 68, 0.15);
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
+// text formatter
+@mixin text-formatter($color, $fontFamily, $fontSize, $fontWeight) {
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+.brand__header {
+  width: 485px;
+  h4 {
+    @include text-formatter(#242424, "Poppins", 32px, 700);
+    line-height: 40px;
+  }
+}

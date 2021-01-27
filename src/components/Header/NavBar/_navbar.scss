@@ -1,0 +1,45 @@
+$white-text: #ffff;
+$primary-nav: #85a3f7;
+
+.navbar__container {
+  border-bottom: 1px solid $white-text;
+  width: 82%;
+}
+
+.activeNav {
+  border-bottom: 1px solid $primary-nav;
+  color: $primary-nav !important;
+}
+
+.dropdown-menu {
+  box-shadow: 0 4px 60px rgba(32, 32, 32, 0.06);
+  background-color: $white-text;
+  width: 220px;
+  height: 200px;
+  position: relative;
+  margin-top: 20px;
+  .dropdown-item {
+    margin-bottom: 12px;
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  left: 180px;
+  top: 70px;
+  width: 150px;
+  height: 100px;
+  background: $white-text;
+}
+
+.list-active {
+  border-left: 3px solid #85a3f7;
+  display: inline-block;
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.dropdown-menu.show {
+  left: -140px;
+}

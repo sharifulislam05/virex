@@ -1,0 +1,42 @@
+$white-text: #ffff;
+
+.why-us {
+  background: url("../../images/Rectangle_5.png");
+  background-size: cover;
+  height: 600px;
+}
+
+.why-us__left {
+  margin-top: 100px;
+  color: $white-text;
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  span {
+    height: 50px;
+    width: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: $white-text;
+    font-size: 1.8rem;
+  }
+
+  .logo-compress {
+    background: tomato;
+  }
+
+  .logo-shield {
+    background: #58d7c1;
+  }
+
+  .logo-mobile {
+    background: #f5d150;
+  }
+
+  .logo-memory {
+    background: #fb9ed7;
+  }
+}

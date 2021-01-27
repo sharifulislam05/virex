@@ -1,0 +1,39 @@
+@use '../../styles/styles';
+
+.feature__details {
+  margin-bottom: 2rem;
+  p {
+    @include styles.text-formatter(#242424, "Poppins", 15px, 400);
+    opacity: 0.7;
+    line-height: 25px;
+  }
+  span {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+
+.logo__upload {
+  background: #567df4;
+}
+
+.logo__access {
+  background: #f6d665;
+}
+
+.logo__share {
+  background: #fb9ed7;
+}
+
+.logo__security {
+  background: #a78bc5;
+}
+
+.logo__backup {
+  background: #f47456;
+}
+
+.logo__archive {
+  background: #58d7c1;
+}

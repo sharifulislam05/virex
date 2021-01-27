@@ -1,0 +1,40 @@
+$white-text: #ffff;
+
+.funfact {
+  margin-top: 50px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(107, 40, 216, 0.5),
+      rgba(107, 40, 216, 0.9)
+    ),
+    url("../../images/Layer_7.png");
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.fact-text {
+  color: $white-text;
+  h6 {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+}
+
+.fact-logo {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: $white-text;
+  .check-double {
+    color: #7edcc3;
+  }
+  .network-wired {
+    color: #ffdd80;
+  }
+  .award {
+    color: #4587f4;
+  }
+  .smile {
+    color: #ff8c69;
+  }
+}

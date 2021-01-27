@@ -1,0 +1,47 @@
+@use '../../styles/styles';
+
+%shared-feedbacks {
+  box-shadow: 0 10px 92px rgba(32, 32, 32, 0.13);
+  border-bottom-left-radius: 50px 20px;
+  border-bottom-right-radius: 50px 20px;
+  background-color: #ffffff;
+}
+
+.testimonial__container {
+  @extend %shared-feedbacks;
+  margin-top: 80px;
+  height: 550px;
+  width: 600px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.testimonial__header {
+  h4 {
+    @include styles.text-formatter(#242424, "Sarabun", 36px, 900);
+    line-height: 48px;
+  }
+}
+
+.feedbacks {
+  @extend %shared-feedbacks;
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  width: 550px;
+  padding: 20px;
+
+  p {
+    @include styles.text-formatter(#242424, "Poppins", 20px, 400);
+    line-height: 25px;
+  }
+
+  h6 {
+    @include styles.text-formatter(#242424, "Poppins", 25px, 600);
+    padding-top: 20px;
+  }
+}
+
+.feedbacks__star {
+  color: goldenrod;
+}

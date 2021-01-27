@@ -1,0 +1,50 @@
+@use '../../styles/styles';
+
+.steps {
+  height: 600px;
+  margin-bottom: 150px;
+}
+
+.steps-left {
+  background: url("../../images/stepBg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: 10px 10px;
+  img {
+    height: 630px;
+  }
+}
+
+.steps__icon {
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.steps__icon-download {
+  background: #567df4;
+}
+
+.steps__icon-user {
+  background: #f6d665;
+}
+
+.steps__icon-smile {
+  background: #fb9ed7;
+}
+
+.steps__icon-bg {
+  position: absolute;
+  top: -25px;
+  left: 80px;
+  @include styles.text-formatter(#301d44, "Poppins", 116px, 700);
+  opacity: 0.07;
+  text-align: center;
+}
+
+.steps-text {
+  @include styles.text-formatter(#242424, "Poppins", 15px, 400);
+  line-height: 25px;
+}

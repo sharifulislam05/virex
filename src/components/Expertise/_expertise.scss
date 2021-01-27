@@ -1,0 +1,50 @@
+@use '../../styles/styles';
+
+.expert {
+  margin-bottom: 100px;
+}
+
+.expert__details {
+  h5 {
+    @include styles.text-formatter(#242424, "Poppins", "24px", 700);
+    line-height: 24px;
+  }
+  p {
+    @include styles.text-formatter(#242424, "Poppins", "15px", 400);
+    opacity: 0.7;
+    line-height: 20px;
+  }
+  span {
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.expert__video-area {
+  position: relative;
+  .expert-chart {
+    position: absolute;
+    left: -100px;
+    top: 120px;
+  }
+}
+
+.logo__sync {
+  background: #e5ecff;
+  color: #87b0f9;
+}
+
+.logo__research {
+  background: #fff8e5;
+  color: #ffba00;
+}
+
+.logo__develop {
+  background: #ffe5f5;
+  color: #f993d2;
+}
+
+.logo__expert {
+  background: #fae5ff;
+  color: #bb78cb;
+}
